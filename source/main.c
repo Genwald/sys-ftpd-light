@@ -19,7 +19,7 @@
 
 #include "minIni.h"
 
-#define HEAP_SIZE 0xA7000
+#define HEAP_SIZE 0x150000
 
 // We aren't an applet.
 u32 __nx_applet_type = AppletType_None;
@@ -59,8 +59,8 @@ void __appInit(void)
 
         .tcp_tx_buf_size = 0x800,
         .tcp_rx_buf_size = 0x800,
-        .tcp_tx_buf_max_size = 0x25000,
-        .tcp_rx_buf_max_size = 0x25000,
+        .tcp_tx_buf_max_size = 0x40000,
+        .tcp_rx_buf_max_size = 0x40000,
 
         //We don't use UDP, set all UDP buffers to 0
         .udp_tx_buf_size = 0,
