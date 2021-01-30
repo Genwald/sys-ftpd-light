@@ -19,7 +19,7 @@
 
 #include "minIni.h"
 
-#define HEAP_SIZE 0x150000
+#define HEAP_SIZE 0x300000
 
 // We aren't an applet.
 u32 __nx_applet_type = AppletType_None;
